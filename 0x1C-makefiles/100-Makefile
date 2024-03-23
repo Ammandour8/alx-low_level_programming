@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 #!/usr/bin/env make
 #Advanced Makefile
 CC = gcc
 SRC = school.c main.c
+=======
+CC = gcc
+SRC = main.c school.c
+>>>>>>> 50dbb2b1d625d6106cf023b66f4fa876fadf6b6d
 OBJ = $(SRC:.c=.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+<<<<<<< HEAD
 .PHONY: all  oclean fclean re clean
+=======
+.PHONY: all clean oclean fclean re
+>>>>>>> 50dbb2b1d625d6106cf023b66f4fa876fadf6b6d
 
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
